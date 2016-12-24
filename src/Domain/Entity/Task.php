@@ -17,7 +17,7 @@ final class Task implements EntityInterface
     /** @var string */
     private $taskName;
 
-    /** @var string  */
+    /** @var TaskStatus  */
     private $taskStatus;
 
     /**
@@ -31,7 +31,7 @@ final class Task implements EntityInterface
     {
         $this->id = $id;
         $this->taskName = $taskName;
-        $this->taskStatus = $taskStatus->toNative();
+        $this->taskStatus = $taskStatus;
     }
 
     /**
@@ -51,9 +51,9 @@ final class Task implements EntityInterface
     }
 
     /**
-     * @return string
+     * @return TaskStatus
      */
-    public function getTaskStatus(): string
+    public function getTaskStatus(): TaskStatus
     {
         return $this->taskStatus;
     }

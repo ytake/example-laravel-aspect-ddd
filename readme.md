@@ -1,4 +1,4 @@
-# Laravel Aspect Oriented Programing with DDD
+# Laravel Aspect Oriented Programming with DDD
  
 Laravelフレームワークを利用して、ドメイン駆動設計風に機能を実装したものです。
 
